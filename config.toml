@@ -1,4 +1,4 @@
-baseURL = "http://usamasubhani.tech/blog"
+baseURL = "http://usamasubhani.github.io/blog"
 languageCode = "en-us"
 title = "Usama's Blog"
 theme = "hugo-notepadium"
