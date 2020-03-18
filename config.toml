@@ -2,6 +2,7 @@ baseURL = "http://usamasubhani.tech/blog"
 languageCode = "en-us"
 title = "Usama's Blog"
 theme = "hugo-notepadium"
+publishDir = "docs"
 
 [params]
 style = "auto"  # default: auto. light: light theme, dark: dark theme, auto: based on system.
