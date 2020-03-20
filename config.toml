@@ -14,4 +14,4 @@ fullRss = false # Puts entire HTML post into rss 'description' tag. If unset, de
 
 [[params.nav.custom]]
 title = "Home"
-url = "#"
+url = "https://usamasubhani.github.io/"
