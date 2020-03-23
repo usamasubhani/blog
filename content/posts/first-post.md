@@ -6,4 +6,6 @@ draft: false
 
 # Hello World
 
-Setting up this blog using Hugo. In the next post I will explain how to setup a blog using hugo and host it on Github pages
+Setting up this blog using Hugo. In the next post I will explain how to setup a blog using hugo and host it on Github pages.
+
+Automating the build of site using Github actions.
