@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en"><meta charset="utf-8"><meta name="generator" content="Hugo 0.66.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<html lang="en"><meta charset="utf-8"><meta name="generator" content="Hugo 0.68.1" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="color-scheme" content="light dark">
-<meta name="supported-color-schemes" content="light dark"><title>Blogging Setup With Hugo and Github Pages&nbsp;&ndash;&nbsp;Usama&#39;s Blog</title><link rel="stylesheet" href="/blog/css/core.min.bd859a1555c63591b5d39ec8693f967b44db9185b9b75cf79c2f4e422baddaec635daf74569766c0f25692a037be4789.css" integrity="sha384-vYWaFVXGNZG1057IaT&#43;We0TbkYW5t1z3nC9OQiut2uxjXa90VpdmwPJWkqA3vkeJ"><body>
+<meta name="supported-color-schemes" content="light dark"><title>Blogging Setup With Hugo and GitHub Pages&nbsp;&ndash;&nbsp;Usama&#39;s Blog</title><link rel="stylesheet" href="/blog/css/core.min.912e116be54cfcd952d3c173ebd96a256a2d2cb9cf9677f5071253507d487e86a01f79163010019c25b694fe310b4bb5.css" integrity="sha384-kS4Ra&#43;VM/NlS08Fz69lqJWotLLnPlnf1BxJTUH1IfoagH3kWMBABnCW2lP4xC0u1"><body>
     <div class="base-body"><section id="header" class="site header">
     <div class="header wrap"><span class="header left-side"><a class="site home" href="/blog/"><span class="site name">Usama's Blog</span></a></span>
         <span class="header right-side"><div class="nav wrap"><nav class="nav"><a class="nav item" href="https://usamasubhani.github.io/"target="_blank">Home</a></nav></div></span></div><div class="site slogan"><span class="title">100% JavaScript-free</span></div></section><div id="content"><div class="article-container"><section class="article header">
-    <h1 class="article title">Blogging Setup With Hugo and Github Pages</h1><p class="article date">Wednesday, March 18, 2020</p></section><article class="article markdown-body"><p>If you want to share your thoughts with the world, starting an online blog is a good idea. You can use a static site generator and a free static hosting service to host your blog for free.</p>
-<p>In this post, I will show you how I setup my blog using Hugo and Github pages.</p>
+    <h1 class="article title">Blogging Setup With Hugo and GitHub Pages</h1><p class="article date">Wednesday, March 18, 2020</p></section><article class="article markdown-body"><p>If you want to share your thoughts with the world, starting an online blog is a good idea. You can use a static site generator and a free static hosting service to host your blog for free.</p>
+<p>In this post, I will show you how I setup my blog using <strong>Hugo</strong> and <strong>GitHub pages</strong>.</p>
 <h2 id="workflow">Workflow</h2>
 <ol>
 <li>Write posts in markdown.</li>
 <li>Convert to a static website using hugo.</li>
-<li>Commit and push to Github to deploy.</li>
+<li>Commit and push to GitHub to deploy.</li>
 </ol>
 <h2 id="install-hugo">Install Hugo</h2>
 <p>To build the site, hugo must be installed on your system.</p>
@@ -24,14 +24,13 @@
 <p>To check if hugo is installed, run</p>
 <pre><code>hugo version
 </code></pre><h2 id="create-and-configure-site">Create and Configure Site</h2>
-<h3 id="heading"></h3>
 <p>Create a new site named &lsquo;blog&rsquo;</p>
 <pre><code>hugo new site blog
 </code></pre><p>Hugo will generate files required for a site in a new folder called blog.</p>
 <p>Initialize an empty Git repository.</p>
 <pre><code>git init
 </code></pre><p>A theme is required for a hugo site. Visit <a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a> and select a theme. For this tutorial, I am using notepadium. To use a theme, it should be in themes directory of hugo site. It is recommended to add theme as a <a href="https://git-scm.com/book/en/v2/Git-Tools-Submodules"target="_blank">Git Submodule</a> because it makes easier to update themes.</p>
-<pre><code>git submodule add https://github.com/cntrump/hugo-notepadium.git themes/hugo-notepadium
+<pre><code>git submodule add https://GitHub.com/cntrump/hugo-notepadium.git themes/hugo-notepadium
 </code></pre><p>To use installed theme, add these lines to <code>config.toml</code></p>
 <pre><code>theme = &quot;hugo-notepadium&quot;
 </code></pre><h2 id="write-some-content">Write Some Content</h2>
@@ -42,18 +41,18 @@
 <p>Preview your site before deploying by running</p>
 <pre><code>hugo server
 </code></pre><p>Your website will be available at http://localhost:1313/.</p>
-<h2 id="build-and-deploy-on-github-pages">Build and Deploy on Github Pages</h2>
+<h2 id="build-and-deploy-on-github-pages">Build and Deploy on GitHub Pages</h2>
 <p>Types of GitHub Pages:</p>
 <ul>
-<li>User Pages: [username].github.io</li>
-<li>Project Pages: [username].github.io/[project]</li>
+<li>User Pages: [username].GitHub.io</li>
+<li>Project Pages: [username].GitHub.io/[project]</li>
 </ul>
 <p>I recommend using Project Pages for blog.</p>
 <p>In <code>config.toml</code>, add</p>
 <pre><code>publishDir = &quot;docs&quot;
 </code></pre><p>This will output generated static files to docs folder. GitHub pages will deploy from this folder.</p>
 <p>Also set <code>baseURL</code> and <code>title</code>.</p>
-<p>Create a new repository in your Github account and copy its url.</p>
+<p>Create a new repository in your GitHub account and copy its URL.</p>
 <p>In your hugo site directory,  run</p>
 <pre><code>git remote add origin &lt;URL-of-new-Repo&gt;
 </code></pre><p>Build your site by running</p>
@@ -62,9 +61,13 @@
 <pre><code>git add .
 git commit -m &quot;First Post&quot;
 git push origin master
-</code></pre><p>Go to Github repository Settings &gt; GitHub pages. Select /docs in <strong>Source</strong>.</p>
-<p>Navigate to your site at [username].github.io/blog</p>
+</code></pre><p>Go to GitHub repository Settings &gt; GitHub pages. Select /docs in <strong>Source</strong>.</p>
+<p>Navigate to your site at [username].GitHub.io/blog</p>
 <p>Profit.</p>
+<h2 id="to-do">To-Do</h2>
+<ul>
+<li><input disabled="" type="checkbox"> Automate build and deploy.</li>
+</ul>
 </article></div></div><section id="footer" class="footer"><div style="display:flex; flex-direction:row; flex-wrap:wrap; justify-content:space-between;">
 <p style="flex-shrink: 0;">Usama's Blog</p>
 <p><span>Powered by </span><a

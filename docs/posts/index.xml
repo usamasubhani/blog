@@ -12,14 +12,14 @@
     
     
     <item>
-      <title>Blogging Setup With Hugo and Github Pages</title>
+      <title>Blogging Setup With Hugo and GitHub Pages</title>
       <link>/blog/posts/hugo-setup/</link>
       <pubDate>Wed, 18 Mar 2020 17:28:51 +0500</pubDate>
       
       <guid>/blog/posts/hugo-setup/</guid>
       <description>If you want to share your thoughts with the world, starting an online blog is a good idea. You can use a static site generator and a free static hosting service to host your blog for free.
-In this post, I will show you how I setup my blog using Hugo and Github pages.
-Workflow  Write posts in markdown. Convert to a static website using hugo. Commit and push to Github to deploy.</description>
+In this post, I will show you how I setup my blog using Hugo and GitHub pages.
+Workflow  Write posts in markdown. Convert to a static website using hugo. Commit and push to GitHub to deploy.</description>
       
     </item>
     

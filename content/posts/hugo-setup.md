@@ -1,18 +1,18 @@
 ---
-title: "Blogging Setup With Hugo and Github Pages"
+title: "Blogging Setup With Hugo and GitHub Pages"
 date: 2020-03-18T17:28:51+05:00
 draft: false
 ---
 
 If you want to share your thoughts with the world, starting an online blog is a good idea. You can use a static site generator and a free static hosting service to host your blog for free.
 
-In this post, I will show you how I setup my blog using Hugo and Github pages.
+In this post, I will show you how I setup my blog using **Hugo** and **GitHub pages**.
 
 ## Workflow
 
 1. Write posts in markdown.
 2. Convert to a static website using hugo.
-3. Commit and push to Github to deploy.
+3. Commit and push to GitHub to deploy.
 
 ## Install Hugo
 
@@ -44,8 +44,6 @@ hugo version
 
 ## Create and Configure Site
 
-### 
-
 Create a new site named 'blog'
 
 ```
@@ -65,7 +63,7 @@ git init
 A theme is required for a hugo site. Visit https://themes.gohugo.io/ and select a theme. For this tutorial, I am using notepadium. To use a theme, it should be in themes directory of hugo site. It is recommended to add theme as a [Git Submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules) because it makes easier to update themes.
 
 ```
-git submodule add https://github.com/cntrump/hugo-notepadium.git themes/hugo-notepadium
+git submodule add https://GitHub.com/cntrump/hugo-notepadium.git themes/hugo-notepadium
 ```
 
 To use installed theme, add these lines to `config.toml`
@@ -96,12 +94,12 @@ hugo server
 
 Your website will be available at http://localhost:1313/.
 
-## Build and Deploy on Github Pages
+## Build and Deploy on GitHub Pages
 
 Types of GitHub Pages:
 
-- User Pages: [username].github.io
-- Project Pages: [username].github.io/[project]
+- User Pages: [username].GitHub.io
+- Project Pages: [username].GitHub.io/[project]
 
 I recommend using Project Pages for blog.
 
@@ -115,7 +113,7 @@ This will output generated static files to docs folder. GitHub pages will deploy
 
 Also set `baseURL` and `title`.
 
-Create a new repository in your Github account and copy its url.
+Create a new repository in your GitHub account and copy its URL.
 
 In your hugo site directory,  run
 
@@ -139,9 +137,15 @@ git commit -m "First Post"
 git push origin master
 ```
 
-Go to Github repository Settings > GitHub pages. Select /docs in **Source**.
+Go to GitHub repository Settings > GitHub pages. Select /docs in **Source**.
 
-Navigate to your site at [username].github.io/blog
+Navigate to your site at [username].GitHub.io/blog
 
 Profit.
+
+
+
+## To-Do
+
+- [ ] Automate build and deploy.
 
