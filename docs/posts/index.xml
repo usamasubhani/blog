@@ -6,10 +6,21 @@
     <description>Recent content in Posts on Usama&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Mar 2020 17:28:51 +0500</lastBuildDate>
+    <lastBuildDate>Thu, 09 Apr 2020 21:07:22 +0500</lastBuildDate>
     
         <atom:link href="/blog/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Kano</title>
+      <link>/blog/posts/kano/</link>
+      <pubDate>Thu, 09 Apr 2020 21:07:22 +0500</pubDate>
+      
+      <guid>/blog/posts/kano/</guid>
+      <description>Kano A to-do list application consists of following
+ Flask back-end hosted on Heroku. Link Angular web client. Link Flutter mobile app. Link  </description>
+      
+    </item>
     
     <item>
       <title>Blogging Setup With Hugo and GitHub Pages</title>
