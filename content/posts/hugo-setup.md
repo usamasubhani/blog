@@ -29,7 +29,7 @@ brew install hugo
 On Arch linux
 
 ```
-pacman -Syu hugo
+pacman -S hugo
 ```
 
 For other distros and Windows, [this](https://gohugo.io/getting-started/installing/)
